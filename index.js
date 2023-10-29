@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/posts", async (req, res) => {
-  const posts = await pool.query("SELECT * FROM users;");
+  const posts = await pool.query("SELECT * FROM clientes;");
   res.send({ posts });
 });
 
